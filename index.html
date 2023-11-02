@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>TechTestics</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">Products</li>
+                <li>About Us</li>
+                <li id="contact">Contact</li>
+            </ul>
+
+            <button class="menu button">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Information Technology</p>
+            <p class="msg">Introducing TechTestics WebTech: Your Digital Dream Team!
+
+                TechTestics WebTech is your premier destination for web development solutions. Our team of experts crafts dynamic websites that captivate and convert. Whether you're a startup or an established business, we're here to bring your vision to life. Join us in the world of limitless possibilities!</p>
+            <button class="cta">Learn More</button>
+        </section>
+
+        <section class="right">
+            <img src="./images/img.svg" alt="Landing image">
+        </section>
+
+    </section>
+
+    <div>
+        <section class="Contact">
+            <section class="left1">
+                <div class="contact-info">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <p>Address: 3579 Marmora Road, Glandrum, Clackmannanshire, DK4
+                        5678</p>
+                </div>
+            </section>
+
+            <section class="right1">
+                <form action="" method="post">
+                    <input type="text" name="name" placeholder="Your Name..">
+                    <input type="email" name="email" placeholder="Your Email.." required>
+                    <textarea name="message" rows="5" cols="20" placeholder="Message.."></textarea>
+                    <button class="submit" href="#">Submit</button>
+                </form>
+            </section>
+        </section>
+    </div>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+
+    </script>
+
+</body>
+
+</html>
